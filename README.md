@@ -1,7 +1,7 @@
 # Projects
 ## bfm
 <p align="center">
-  <img src="http://i104.fastpic.ru/big/2018/0509/75/f3a0f608264bd169b9043485ced4be75.png">
+  <a href="http://fastpic.ru/view/104/2018/0509/_2e9d1760d656f9f2182468a7cba38d4e.png.html" target="_blank"><img src="http://i104.fastpic.ru/thumb/2018/0509/4e/_2e9d1760d656f9f2182468a7cba38d4e.jpeg" border="0"></a>
 </p>
 
 Made correct string for formattedMessage in [react-intl](https://github.com/yahoo/react-intl).
