@@ -7,7 +7,7 @@
 Made correct string for formattedMessage in [react-intl](https://github.com/yahoo/react-intl).
 <br />
 E.g.:
-```react
+```js
 <FormattedMessage
   id="terms.access.paragraph-4"
   defaultMessage={"You are responsible for making all arrangements necessary for you to have access " +
