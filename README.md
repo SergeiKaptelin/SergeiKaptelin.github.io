@@ -4,7 +4,7 @@
   <img src="https://image.ibb.co/keTwW7/7b07a3c506_1.png"/>
 </p>
 
-Made correct string for formattedMessage in [react-intl](https://github.com/yahoo/react-intl).
+Made correct string for formattedMessage in [react-intl](https://github.com/yahoo/react-intl), which can be use to prevent too much characters in a row error in flow for react. 
 <br />
 E.g.:
 ```js
