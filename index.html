@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="index.css">
+    <title>Beautify formatted message</title>
+  </head>
+  <body>
+    <h1 class="title">Beautify formatted message</h1>
+    <div class="wrap">
+      <textarea class="typed-field" name="typed" cols="60" rows="30" autofocus="true" placeholder="Please type the text"></textarea>
+      <div class="control-block">
+        <div>
+          <label class="label" for="charecters-count">Charecters in one line</label>
+          <input class="input-number" type="number" id="charecters-count" value="80"/>
+        </div>
+        <button class="button button-beautify">Beautify</button>
+        <button class="button button-clear">Clear</button>
+      </div>
+      <textarea class="beautify-field" name="beautify" cols="60" rows="30" placeholder="Beautify text would be here"></textarea>
+      <script src="beautify.js"></script>
+    </div>
+  </body>
+</html>
