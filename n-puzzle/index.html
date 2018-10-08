@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>n-puzzle</title>
+<link rel="apple-touch-icon" sizes="57x57" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="n-puzzle"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="n-puzzle"><link rel="icon" type="image/png" sizes="32x32" href="icons-30250825b0c28ff0ab935f4d35252730/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-30250825b0c28ff0ab935f4d35252730/favicon-16x16.png"><link rel="shortcut icon" href="icons-30250825b0c28ff0ab935f4d35252730/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-30250825b0c28ff0ab935f4d35252730/apple-touch-startup-image-1536x2008.png"><link href="styles.bcd2dad14f6932ce33df.css" rel="stylesheet"></head>
+<body>
+<div class="section">
+  <h1 class="title">
+    N-puzzle
+  </h1>
+  <div class="wrapper">
+    <div class="field smallField">
+      <div class="row">
+        <div class="cell" data-pos="0,0">1</div>
+        <div class="cell" data-pos="0,1">2</div>
+        <div class="cell" data-pos="0,2">3</div>
+      </div>
+      <div class="row">
+        <div class="cell" data-pos="1,0">4</div>
+        <div class="cell" data-pos="1,1">5</div>
+        <div class="cell" data-pos="1,2">6</div>
+      </div>
+      <div class="row">
+        <div class="cell" data-pos="2,0">7</div>
+        <div class="cell" data-pos="2,1">8</div>
+        <div class="cell empty" data-pos="2,2"></div>
+      </div>
+    </div>
+    <div class="field largeField" style="display: none;">
+      <div class="row">
+        <div class="cell" data-pos="0,0">1</div>
+        <div class="cell" data-pos="0,1">2</div>
+        <div class="cell" data-pos="0,2">3</div>
+        <div class="cell" data-pos="0,3">4</div>
+      </div>
+      <div class="row">
+        <div class="cell" data-pos="1,0">5</div>
+        <div class="cell" data-pos="1,1">6</div>
+        <div class="cell" data-pos="1,2">7</div>
+        <div class="cell" data-pos="1,3">8</div>
+      </div>
+      <div class="row">
+        <div class="cell" data-pos="2,0">9</div>
+        <div class="cell" data-pos="2,1">10</div>
+        <div class="cell" data-pos="2,2">11</div>
+        <div class="cell" data-pos="2,3">12</div>
+      </div>
+      <div class="row">
+        <div class="cell" data-pos="3,0">13</div>
+        <div class="cell" data-pos="3,1">14</div>
+        <div class="cell" data-pos="3,2">15</div>
+        <div class="cell empty" data-pos="3,3"></div>
+      </div>
+    </div>
+    <div class="puzzle-configuration">
+      <div class="subtitle text-center">
+        Puzzle configuration
+      </div>
+      <div class="options-wrap">
+        <div class="conf-label">
+          Puzzle type:
+        </div>
+        <div class="radio-buttons-block">
+          <div>
+            <input type="radio" class="checkbox" id="3x3" name="mjau" checked>
+            <label class="label" for="3x3">3x3</label>
+          </div>
+          <div>
+            <input type="radio" class="checkbox" id="4x4" name="mjau">
+            <label class="label" for="4x4">4x4</label>
+          </div>
+        </div>
+      </div>
+      <div class="options-wrap">
+        <div class="conf-label">
+          Algorithm type:
+        </div>
+        <div>
+          A*
+        </div>
+      </div>
+      <div class="select-wrap">
+        <div class="conf-label select-label">
+          Heuristic type:
+        </div>
+        <div id="heuristic-select" class="select-box">
+          <input id="manhattanDistance" type="radio" name="hover-select" checked>
+          <label for="manhattanDistance">
+            Manhattan distance
+          </label>
+          <input id="linearConflicts" type="radio" name="hover-select">
+          <label for="linearConflicts">
+            Linear conflicts
+          </label>
+          <input id="misplacedTiles" type="radio" name="hover-select">
+          <label for="misplacedTiles">
+            Misplaced tiles
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="button-section">
+    <div class="button-block">
+      <button class="button btnFloat btnLightBlue random-button">
+        Random
+      </button>
+      <button class="button btnFloat btnBlueGreen solve-button">
+        Solve
+      </button>
+    </div>
+    <div class="play-wrap" style="display: none;">
+      <div class="play-button">
+        <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100px" width="100px"
+           viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+          <path class="stroke-solid" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+            C97.3,23.7,75.7,2.3,49.9,2.5"/>
+          <path class="stroke-dotted" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+            C97.3,23.7,75.7,2.3,49.9,2.5"/>
+          <path class="icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="result" style="display: none;">
+    <div class="subtitle">
+      Result
+    </div>
+    <div class="result-option-wrap">
+      <span class="result-label">
+        Complexity in time:
+      </span>
+      <span class="complexity-in-time"></span>
+    </div>
+    <div class="result-option-wrap">
+      <span class="result-label">
+        Complexity in size:
+      </span>
+      <span class="complexity-in-size"></span>
+    </div>
+    <div class="result-option-wrap">
+      <span class="result-label">
+        Number of moves:
+      </span>
+      <span class="number-of-moves"></span>
+    </div>
+    <div class="result-option-wrap">
+      <span class="result-label">
+        The ordered sequence of states:
+      </span>
+      <span class="sequence-of-states"></span>
+    </div>
+    <div class="result-option-wrap">
+      <span class="result-label">
+        Completed in:
+      </span>
+      <span class="completed-in"></span>
+    </div>
+  </div>
+  <div id="loading" class="hide">
+    <table><tr><td>
+      <div id="spinner"></div>
+    </td></tr></table>
+  </div>
+</div>
+<script type="text/javascript" src="main.0bbd2c4ee6d52cc104f8.js"></script></body>
+</html>
