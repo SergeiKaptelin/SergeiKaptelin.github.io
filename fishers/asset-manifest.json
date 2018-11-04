@@ -1,0 +1,21 @@
+{
+  "main.css": "./static/css/main.36f3d45a.chunk.css",
+  "main.js": "./static/js/main.75c943e8.chunk.js",
+  "main.js.map": "./static/js/main.75c943e8.chunk.js.map",
+  "static/css/1.165085d1.chunk.css": "./static/css/1.165085d1.chunk.css",
+  "static/js/1.ad87a44b.chunk.js": "./static/js/1.ad87a44b.chunk.js",
+  "static/js/1.ad87a44b.chunk.js.map": "./static/js/1.ad87a44b.chunk.js.map",
+  "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
+  "runtime~main.js.map": "./static/js/runtime~main.4a686d48.js.map",
+  "static/media/menu.svg": "./static/media/menu.7d91c5bc.svg",
+  "static/media/fish.jpg": "./static/media/fish.3f32a130.jpg",
+  "static/media/fider.jpg": "./static/media/fider.a90f556a.jpg",
+  "static/media/fish-rod.jpg": "./static/media/fish-rod.28144554.jpg",
+  "static/media/stuff.jpg": "./static/media/stuff.bd1ae353.jpg",
+  "static/media/close.svg": "./static/media/close.aeec2863.svg",
+  "static/css/main.36f3d45a.chunk.css.map": "./static/css/main.36f3d45a.chunk.css.map",
+  "static/css/1.165085d1.chunk.css.map": "./static/css/1.165085d1.chunk.css.map",
+  "index.html": "./index.html",
+  "precache-manifest.4b4c0ad61eeea1f0f33b1f0a2e212c59.js": "./precache-manifest.4b4c0ad61eeea1f0f33b1f0a2e212c59.js",
+  "service-worker.js": "./service-worker.js"
+}
