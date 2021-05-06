@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ua">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./index.css">
+  <title>Генератор Імпровізації</title>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="generator">
+    <div class="container">
+      <div class="heading">
+        <h1>
+          Генератор Імпровізації
+        </h1>
+        <button data-hook="random-button">
+          Рандом
+        </button>
+      </div>
+      <div class="content">
+        <div
+          class="card result"
+          data-hook="result"
+        >
+          Результат з'явиться тут. Натисніть рандом
+        </div>
+        <div class="settings">
+          <div class="card moves">
+            <h2>
+              Рухи
+            </h2>
+            <ul
+              class="moves-list"
+              data-hook="all-moves"
+            >
+              <li>Apple Jack</li>
+              <li>Around the World</li>
+              <li>Bee's Knees</li>
+              <li>Ball Change</li>
+              <li>Birds</li>
+              <li>Black Bottom</li>
+              <li>Boogie Back</li>
+              <li>Boogie Forward</li>
+              <li>Boogie Drop</li>
+              <li>Box Step</li>
+              <li>Boogie Step</li>
+              <li>Brake a Leg</li>
+              <li>Breeze Knees</li>
+              <li>Bunny Hop</li>
+              <li>Cake Walk</li>
+              <li>Camel Walk</li>
+              <li>Charleston 20th</li>
+              <li>Chase</li>
+              <li>Chase more</li>
+              <li>Corkscrew</li>
+              <li>Crawls</li>
+              <li>Crazy Legs (Rebel Legs, Rubber Legs)</li>
+              <li>Cross Kicks (Run on the Log)</li>
+              <li>Crossover</li>
+              <li>Cow tail (Cartwheel)</li>
+              <li>Duck Walk</li>
+              <li>Drunken Sailor</li>
+              <li>Eagle Slide</li>
+              <li>Fall of the Log</li>
+              <li>Fish Tail</li>
+              <li>Flying Charleston</li>
+              <li>Gaze Afar</li>
+              <li>Golubec</li>
+              <li>Grapevine</li>
+              <li>Halliluya</li>
+              <li>Half Break</li>
+              <li>Hangman</li>
+              <li>Happy Feet</li>
+              <li>Helicopter Kicks (Hop Around)</li>
+              <li>Heels</li>
+              <li>Heels Click</li>
+              <li>Hips Grinding</li>
+              <li>Hitch Hiker</li>
+              <li>Hot Potatoes</li>
+              <li>Inside the Leg</li>
+              <li>Itches</li>
+              <li>Jig Walks</li>
+              <li>Jumps</li>
+              <li>Jump Kick Slide (from Big Apple)</li>
+              <li>Jump Charleston (Jam Charleston)</li>
+              <li>Jump Toe</li>
+              <li>Jump Toe Kick Step</li>
+              <li>Kicks</li>
+              <li>Knee Slaps</li>
+              <li>Knee Rocks</li>
+              <li>Lockstep front (Cross Turn)</li>
+              <li>Lockstep Back</li>
+              <li>London Bridge</li>
+              <li>Lowdown (Funky Butt)</li>
+              <li>Mambo Step</li>
+              <li>Messaround</li>
+              <li>Moonslide</li>
+              <li>Opposites</li>
+              <li>Over the Top (Ankle Step)</li>
+              <li>Paddle Turn</li>
+              <li>Pecking (Pecks)</li>
+              <li>Pimp Walk</li>
+              <li>Pivots (Pivot Step, Strutting with inside Turn)</li>
+              <li>Poni Walk</li>
+              <li>Pushes</li>
+              <li>Ride the Pony</li>
+              <li>Rocks (Halliluya Rocks, Saxophone)</li>
+              <li>Ronds</li>
+              <li>Run run</li>
+              <li>Rusty Dusty</li>
+              <li>Sailor Kicks</li>
+              <li>Savoy Kicks</li>
+              <li>Scarecrow</li>
+              <li>Scissors</li>
+              <li>Shim Sham Break</li>
+              <li>Shim Sham Step (Big Apple Stomp)</li>
+              <li>Skating</li>
+              <li>Shish-ka-boom-ba</li>
+              <li>Shish-ka-boom-ba II (step hop step clap clap clap)</li>
+              <li>Shoe Shine</li>
+              <li>Shorty George</li>
+              <li>Shorty George one leg</li>
+              <li>Skips</li>
+              <li>Slides</li>
+              <li>Slip Slop</li>
+              <li>Snake Hips (Mooche)</li>
+              <li>Shimmy</li>
+              <li>Spank the Baby</li>
+              <li>Stomps</li>
+              <li>Stomp Off</li>
+              <li>Suzie Q</li>
+              <li>Squat Charleston</li>
+              <li>Sweep Charleston</li>
+              <li>Tabby the Cat</li>
+              <li>Tackie Annie</li>
+              <li>Tic Tocs</li>
+              <li>Tracking</li>
+              <li>Travelling Charleston</li>
+              <li>Trip over</li>
+              <li>Triple Steps</li>
+              <li>Turkey Trots</li>
+              <li>Twists</li>
+            </ul>
+            <button
+              class="show-all-moves-button"
+              data-hook="show-all-moves"
+            >
+              Показати усі рухи
+            </button>
+          </div>
+          <div class="card place">
+            <h2>
+              Місце у просторі
+            </h2>
+            <input
+              class="using-checkbox"
+              data-hook="place-items-checkbox"
+              type="checkbox"
+              checked
+            >
+            <ul data-hook="place-items">
+              <li>Високий</li>
+              <li>Низький</li>
+              <li>Широкий</li>
+              <li>Зібраний</li>
+              <li>Баунсовий</li>
+              <li>Смусовий</li>
+            </ul>
+          </div>
+          <div class="card moving">
+            <h2>
+              Просування
+            </h2>
+            <input
+              class="using-checkbox"
+              data-hook="moving-items-checkbox"
+              type="checkbox"
+              checked
+            >
+            <ul data-hook="moving-items">
+              <li>Вперед-назад</li>
+              <li>Праворуч-ліворуч</li>
+              <li>На місці</li>
+              <li>Обертаючись</li>
+              <li>O</li>
+              <li>/</li>
+              <li>Z</li>
+              <li>▼</li>
+              <li>▆</li>
+            </ul>
+          </div>
+          <div class="card position">
+            <h2>
+              Позиція до глядача
+            </h2>
+            <input
+              class="using-checkbox"
+              data-hook="positions-checkbox"
+              type="checkbox"
+              checked
+            >
+            <ul data-hook="positions">
+              <li>Анфас</li>
+              <li>Профіль</li>
+              <li>Діагональ</li>
+              <li>Спина</li>
+              <li>Постійно змінюється</li>
+            </ul>
+          </div>
+          <div class="card counts">
+            <h2>
+              Рахунки
+            </h2>
+            <input
+              class="using-checkbox"
+              data-hook="counts-checkbox"
+              type="checkbox"
+              checked
+            >
+            <ul data-hook="counts">
+              <li>8</li>
+              <li>4</li>
+              <li>2</li>
+              <li>1</li>
+              <li>3</li>
+              <li>5</li>
+              <li>7</li>
+              <li>6</li>
+            </ul>
+          </div>
+          <div class="card emotions">
+            <h2>
+              Емоції
+            </h2>
+            <input
+              class="using-checkbox"
+              data-hook="emotions-checkbox"
+              type="checkbox"
+              checked
+            >
+            <ul data-hook="emotions">
+              <li>Радість</li>
+              <li>Дуркування</li>
+              <li>Втома</li>
+              <li>Зваба</li>
+              <li>Екстаз</li>
+              <li>Страх</li>
+              <li>Непевність</li>
+            </ul>
+          </div>
+          <div class="card organs">
+            <h2>
+              Частини тіла
+            </h2>
+            <input
+              class="using-checkbox"
+              data-hook="organs-checkbox"
+              type="checkbox"
+              checked
+            >
+            <ul data-hook="organs">
+              <li>Голова</li>
+              <li>Руки</li>
+              <li>Зап'ястки</li>
+              <li>Плечі</li>
+              <li>Стегна</li>
+              <li>Стопи</li>
+              <li>Корпус</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
